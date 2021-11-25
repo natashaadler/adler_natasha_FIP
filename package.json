@@ -1,0 +1,25 @@
+{
+  "name": "adler_natasha_fip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natashaadler/adler_natasha_FIP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natashaadler/adler_natasha_FIP/issues"
+  },
+  "homepage": "https://github.com/natashaadler/adler_natasha_FIP#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "imagemin": "^8.0.1"
+  }
+}

@@ -1,0 +1,177 @@
+//this is how the file should be syntaxed - make sure the naming convention starts with an underscore (_)
+
+
+//HERO
+
+.hero{
+    height: 650px;
+    background: $color_pink;
+    width: 100%;
+    padding: 50px 200px;
+    position: relative;
+}
+
+.hero_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    height: 400px;
+    text-align: left;
+    color: $font_white;
+
+    h2{
+        font-weight: bold;
+        font-size: $font_heading;
+        padding-bottom: 50px;
+        line-height: 110%;
+        padding-right: 50px;
+    }
+
+    p{
+        font-size: $font_subheading;
+        line-height: 110%;
+    }
+}
+
+.hero_img{
+    img{
+        display: flex;
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+.hero_button{
+    display: flex;
+    justify-content: center;
+
+    button{
+        background: $main_color;
+        border: none;
+        padding: 15px 30px;
+        display: inline-block;
+        border-radius: 50px;
+        transition: 0.5s;
+
+        a{
+            font-size: $font_button;
+            text-decoration: none;
+            color: $color_green;
+            text-align: center;
+            font-weight: bold;
+        }
+      
+    }
+}
+
+.hero_button button:hover{
+    background: $color_green;
+
+    a{
+        color: $main_color;
+    }
+}
+
+//DEMO REEL
+
+.demoreel{
+    display: flex;
+    background: $color_blue;
+    height: 1080px;
+
+    video{
+
+    }
+}
+
+//PORTFOLIO HOME
+
+.portfolio_home{
+    height: 700px;
+    background: $color_green;
+    width: 100%;
+    padding: 50px 200px;
+    position: relative;
+
+
+}
+
+.portfolio_home_title{
+
+    width: 100%;
+  
+
+    h2{
+        color: $color_blue;
+        font-family: $font;
+        font-size: $font_subheading;
+        font-weight: bold;
+        padding: 80px 0px;
+    }
+    
+
+}
+
+.portfolio_home_images{
+
+    display: flex;
+    justify-content: space-between;
+    
+    img{
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+    }
+
+
+}
+
+//CONTACT HOME
+
+.home_contact_btn{
+    height: 200px;
+    background: $color_blue;
+    width: 100%;
+    
+
+}
+
+.contact_btn{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+    button{
+        
+        background: $color_green;
+        border: none;
+        padding: 15px 30px;
+        display: inline-block;
+        border-radius: 50px;
+        transition: 0.5s;
+
+        a{
+            font-size: $font_button;
+            text-decoration: none;
+            color: $main_color;
+            text-align: center;
+            font-weight: bold;
+        }
+
+    }
+}
+
+.contact_btn button:hover{
+    background: $main_color;
+
+    a{
+        color: $color_green;
+    }
+}
