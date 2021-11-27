@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Natasha Adler - Portfolio Website - Home Page</title>
+</head>
+<body>
+    <div class="site_container"><!--SITE CONTAINER-->
+        <h1 class="hidden">Natasha Portfolio Website - Contact</h1>
+<!--HEADER-->
+        <header class="header pink"><!--HEADER STARTS-->
+            <h2 class="hidden">Header</h2>
+            <nav class="nav">
+                <h2 class="hidden">Nav</h2>
+                <div class="nav_bar">
+                    <img class="logo" src="images/logo.svg" alt="Logo Natasha Adler - Mikito">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header><!--HEADER ENDS-->
+<!--HERO-->
+        <section class="hero pink"> <!--HERO STARTS-->
+            <div class="hero_content">
+                <div class="hero_text">
+                    <h2>Contact Me</h2>
+                    <p>Fill out the Contact Form Bellow.</p>
+                </div>
+                <div class="hero_img">
+                    <img src="images/headshotGreen.svg" alt="Natasha Adler Headshot Blue">
+                </div>
+            </div>
+        </section><!--HERO ENDS-->
+<!--CONTACT FIELD-->
+        <section class="contact_form">
+            <div class="contact_form_text">
+                <p>Would love to hear your Feedback.</p>
+                <p>Throw Kindness Like Confetti.</p>
+                <p>Be Well.</p>
+            </div>
+            <div class="contact_form_field">
+                <form action="./includes/mail/send.php" method="POST" id="mail-form">
+                    <label for="firstname"></label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First & Last Name" required>
+    
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+        
+                    <label for="message"></label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here...."></textarea>
+        
+                    <div class="submit-wrapper">
+                        <span class="submit">Submit</span>
+                        <i class=""></i>
+                    </div>
+        
+                </form>
+
+            </div>
+        </section>
+       
+<!--FOOTER-->
+        <footer class="footer pink"><!--FOOTER STARTS-->
+            <div class="social_media">
+                <div class="socials">
+                    <img src="images/instagram.svg" alt="instagram">
+                    <img src="images/linkedin.svg" alt="linkedin">
+                    <img src="images/facebook.svg" alt="facebook">
+                </div>
+                <button class="btn_top"><a href="#"></a></button>
+            </div>
+           
+        </footer><!--FOOTER ENDS-->
+
+    </div><!--SITE CONTAINER-->
+</body>
+<script src="js/main.js" type="module" defer></script>
+</html>
