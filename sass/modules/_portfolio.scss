@@ -1,0 +1,41 @@
+
+
+.portfolio{
+    height: 1600px;
+    width: 100%;
+    padding: 50px 200px;
+    position: relative;
+
+
+}
+
+.portfolio_title{
+
+    width: 100%;
+  
+
+    h2{
+        color: $color_blue;
+        font-family: $font;
+        font-size: $font_subheading;
+        font-weight: bold;
+        padding: 40px 0px;
+    }
+    
+
+}
+
+.portfolio_images{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    
+    img{
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+    }
+
+
+}
