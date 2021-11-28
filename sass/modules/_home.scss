@@ -8,13 +8,13 @@
 
 .demoreel{
     display: flex;
-    background: $color_blue;
-    height: 1080px;
     margin-bottom: 100px;
+    justify-content: center;
 
     video{
-
+        width: 100%;
     }
+
 }
 
 //PORTFOLIO HOME
@@ -53,11 +53,15 @@
         display: flex;
         justify-content: space-between;
         width: 400px;
+        opacity: 1;
+        transition: .5s ease;
+        
     }
-
-
 }
 
+.portfolio_home_images img:hover{
+    opacity: 0.5;
+}
 //CONTACT HOME
 
 .home_contact_btn{
