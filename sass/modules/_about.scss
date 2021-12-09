@@ -4,36 +4,36 @@
 
 //ABOUT ME
 
-.about_me{
+.about{
     display: flex;
     background: $color_green;
-    height: 1000px;
-    padding-left: 200px;
-    padding-right: 200px;
+    height: auto;
+    padding: 50px 200px;
     justify-content: space-between;
     width: 100%;
-
 }
 
 .about_me_img{
     display: flex;
+    padding-right: 5vw;
 
     img{
-        max-width: 600px;
+        display: flex;
+        max-width: 500px;
+        width: 100%;
+        min-width: 250px;
+        height: auto;
     }
 
 }
 
 .about_me_text{
 
-    padding-left: 300px;
-    padding-top: 150px;
-
     h2{
         color: $main_color;
         font-size: $font_subheading;
         font-weight: bold;
-        padding: 80px 0px;
+        padding: 2vw;
     }
     p{
         color: $main_color;
@@ -51,4 +51,13 @@
     width: 100%;
     color: $color_pink;
     padding: 80px;
+}
+
+@media (max-width: 500px){
+.about{
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+
 }

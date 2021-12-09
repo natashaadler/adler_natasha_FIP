@@ -25,48 +25,31 @@
                 </div>
             </nav>
         </header><!--HEADER ENDS-->
-<!--HERO-->
-        <section id="portfolio_section"> <!-- Fav Thing info starts-->
-            <div id="portfolioText"> <!-- Fav Thing text starts-->
-                <h2 class="portfolio_name">slug</h2>
-                <p class="portfolio_heading">slug</p>
-            </div><!-- Fav Thing text ends-->
-            <div class="portfolio_img"><!-- Fav Thing img starts-->
-                <img class="port_img" src="" alt="">
-            </div><!-- Fav Thing img ends-->
-        </section> <!-- Fav Thing info starts-->
-
-        <section id="portfolioButton"></section>
-
-
-        <template id="portfolioButtonTemplate">   <!--Fav thing buttons start-->
-            <div class="portfolio_button" data-name="">
-                <img class="fav_img" src="" alt="">
-            </div>
-        </template>   <!--Fav thing buttons end-->
-
-<!--PORTFOLIO HOME-->
-        <section class="portfolio"> <!--PORTFOLIO HOME STARTS-->
+<!--PORTFOLIO -->
+        <section id="app" class="portfolio"><!--PORTFOLIO HOME STARTS-->
             <div class="portfolio_title">
                 <h2>My Portfolio</h2>
             </div>
             <div class="portfolio_images">
-                    <img src="images/redefining_img1.svg" alt="" class="portfolio_home_img">
-                    <img src="images/londonreferee_img1.svg" alt="" class="portfolio_home_img">
-                    <img src="images/leo_img1.svg" alt="" class="portfolio_home_img">
-                    
+                <img v-for="img in items1" :src="`images/${img.main_img}`" alt="" class="portfolio_home_img" @click="open(img)">
             </div>
             <div class="portfolio_images">
-                <img src="images/manitoba_img1.svg" alt="" class="portfolio_home_img">
-                <img src="images/coffeemate_img1.svg" alt="" class="portfolio_home_img">
-                <img src="images/smoke_img1.svg" alt="" class="portfolio_home_img">
-                
+                <img v-for="img in items2" :src="`images/${img.main_img}`" alt="" class="portfolio_home_img" @click="open(img)">
             </div>
             <div class="portfolio_images">
-                <img src="images/rainbow_img1.svg" alt="" class="portfolio_home_img">
-                <img src="images/flower_img1.svg" alt="" class="portfolio_home_img">
-                <img src="images/monster_img1.svg" alt="" class="portfolio_home_img">
-                
+                <img v-for="img in items3" :src="`images/${img.main_img}`" alt="" class="portfolio_home_img" @click="open(img)">
+            </div>
+            <!-- LIGHTBOX-->
+            <div v-if="focusItem" class="lightbox_background"></div>
+            <div v-if="focusItem" class="lightbox">
+                <h5 @click="close()" class="close_button">Close</h5>
+                <h3>{{ focusItem.title }}</h3>
+                <p>{{ focusItem.text }}</p>
+                <div>
+                    <img :src="`images/${focusItem.img1}`" :alt="focusItem.title">
+                    <img :src="`images/${focusItem.img2}`" :alt="focusItem.title">
+                    <img :src="`images/${focusItem.img3}`" :alt="focusItem.title">
+                </div>
             </div>
         </section><!--PORTFOLIO HOME ENDS-->
 <!--CONTACT BTN-->
@@ -85,10 +68,11 @@
                 </div>
                 <button class="btn_top"><a href="#"></a></button>
             </div>
-           
+
         </footer><!--FOOTER ENDS-->
 
     </div><!--SITE CONTAINER-->
 </body>
-<script src="script/main.js" type="module" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js" defer></script>
+<script src="./script/main.js" type="module" defer></script>
 </html>

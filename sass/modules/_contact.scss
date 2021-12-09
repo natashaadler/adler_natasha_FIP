@@ -89,3 +89,20 @@
        opacity: 50%;
    }
 }
+
+@media (max-width: 500px){
+
+.contact_form{
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.contact_form_text{
+    font-size: 15px;
+    p{
+        padding: 10px;
+    }
+}
+
+
+}
