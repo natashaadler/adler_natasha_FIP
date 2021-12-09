@@ -20,12 +20,12 @@
 //PORTFOLIO HOME
 
 .portfolio_home{
-    height: 700px;
+    height: auto;
     width: 100%;
     padding: 50px 200px;
     position: relative;
 
-
+ 
 }
 
 .portfolio_home_title{
@@ -40,19 +40,20 @@
         font-weight: bold;
         padding: 40px 0px;
     }
-    
-
 }
+
+
 
 .portfolio_home_images{
 
     display: flex;
     justify-content: space-between;
     
+    
     img{
-        display: flex;
-        justify-content: space-between;
-        width: 400px;
+        padding: 1vw;
+        width: 100%;
+        height: auto;
         opacity: 1;
         transition: .5s ease;
         
@@ -65,8 +66,9 @@
 //CONTACT HOME
 
 .home_contact_btn{
-    height: 200px;
+    height: auto;
     width: 100%;
+    padding: 20px;
 }
 
 .contact_btn{
@@ -100,4 +102,13 @@
     a{
         color: $color_green;
     }
+}
+
+
+@media (max-width: 500px){
+
+    .portfolio_home{
+        padding: 10px 20px;
+    }
+
 }
