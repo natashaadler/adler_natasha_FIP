@@ -1,4 +1,4 @@
-![header image](/images/logo.svg "MIKITO")
+![header image](/images/headshotgreen.svg "MIKITO")
 
 # Natasha's FIP
 A collection of creatives working on graphics, videos, and web design at Fanshawe College.
